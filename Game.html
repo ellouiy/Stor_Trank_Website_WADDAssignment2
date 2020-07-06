@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<title> Game</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Bungee+Shade');
+		@import url('https://fonts.googleapis.com/css?family=Raleway');
+	</style>
+	<link rel="stylesheet" href="Design.css">
+</head>
+<body>
+  	<header>
+		<nav class="Navigation">
+			<ul>
+				<li><img src="stortranklogo1.png" height="100" width="80" alt="Non-official Stor Trank insignia">
+				<li><a href="Home.html"> Home</a></li>
+				<li><a href="Home.html#about"> About</a></li>
+				<li><a href="Game.html"> Game</a></li>
+				<li><a href="Results.html"> Leaderboard</a></li>
+				<li><a href="theVoid.html"> The Void</a></li>
+				<li><img src="stortranklogo1.png" height="100" width="80" alt="Non-official Stor Trank insignia">
+			</ul>
+		</nav>
+	</header>
+
+  <main>
+	<h1> No Win Scenario </h1>
+	<h2>A Classic Stor Trank Game</h2>
+
+	<div id="introScreen">
+		<div id="introContent">
+				<h1> Welcome to the Unwinnable Game</h1>
+				<p>The Klingoffs are attacking your ship. You have no firepower left and all you have is a giant shield to deflect the hits. BUT the shield doesn’t cover your entire station. Move the paddle using your mouse to rotate the shields to deflect any oncoming Klingoffs. If a Klingoff ship creeps up behind you, they can entire your safety bubble and beam out your crew. When you reach a missing persons number by 1000, you have failed in your endeavour to save the station, you have too few crew to man it and you will be boarded and captured within seconds. Try and last the longest without hitting your missing persons limit.</p>
+				<p>You’ll feel defeated, and indeed you shall be.</p>
+				<p>This is a no win scenario. </p>
+
+				<button id="btnStart" onClick="startGame()">StartGame</button>
+		</div>
+	</div>
+
+	<div id="endScreen">
+	<h1>A brave effort, Commander</h1>
+		<div id="endForm">
+			<form>
+				Username: <input type="text" id="username" maxlength="10" minlength="2" required><br>
+				Score: <p id="score"></p><br>
+				Date: <p id="date"></p><br>
+			</form>
+			<button id="submit" onclick="location.href='Results.html';">Submit Your Score</button>
+		</div>
+
+		<button id="btnReplay" class="button" onClick="replay()">Play Again</button>
+	</div>
+
+	   <div class="wrapper" id="box">
+			<canvas id="background" width="1000" height="500"></canvas>
+			<canvas id="foreground" width="1000" height="500"></canvas>
+	   </div>
+
+	<h2> What did you think of the game? </h2>
+	<h3> Comment below to let us know for any improvements to make!</h3>
+	<p id="demo">time score text</p>
+	<p id="seconds">time score text</p>
+
+  </main>
+  <footer>
+    <p>Y3840030, WADD assignment 2, University of York, 2019 </p>
+
+  </footer>
+
+  <script src="Game.js"></script>
+</body>
+</html>

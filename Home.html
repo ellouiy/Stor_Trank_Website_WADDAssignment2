@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Home</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Bungee+Shade');
+		@import url('https://fonts.googleapis.com/css?family=Raleway');
+	</style>
+	<link rel="stylesheet" href="Design.css">
+</head>
+
+<body>
+	<header>
+		<nav class="Navigation">
+			<ul>
+				<li><img src="stortranklogo1.png" height="100" width="80" alt="Non-official Stor Trank insignia">
+				<li><a href="Home.html"> Home</a></li>
+				<li><a href="Home.html#about"> About</a></li>
+				<li><a href="Game.html"> Game</a></li>
+				<li><a href="Results.html"> Leaderboard</a></li>
+				<li><a href="theVoid.html"> The Void</a></li>
+				<li><img src="stortranklogo1.png" height="100" width="80" alt="Non-official Stor Trank insignia">
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+
+			<h1>STOR TRANK</h1>
+			<h2>The unfortunate fallacy</h2>
+
+			<h3>space bars. the final front ear. These are the voyages of the sky plane YoinksMaDoinks</h3>
+			<p>Welcome to the home page of an alternate Sci-Fi universe, Stor Trank. A delightful rip off of a certain will-remain-unnamed well loved TV show. The creator of this game can only regard this creation to be an abomination and apologises to any and all fans of the esteemed award winning tv show if anyone is offended by this awful gag. The creator assures you that they are an avid fan themselves and this is just a "total meme", a playful homage to a brilliant and successful franchise.</p>
+
+			<p>This website hosts a lot of information about this fake universe which is essentially a low effort rip off. Below you will find a brief history of this timeline and the characters that dominate the primary scenes of this awful universe.</p>
+
+
+		<h3>Want to play our new "No Win Scenario" game?</h3>
+		<button id='start' onclick="location.href='Game.html';">START GAME</button>
+
+
+		<h2>Have you heard the news?</h2>
+	<div class="row">
+	  <div class="column" s>
+	    <h3>Commander Wilf on his Klingoff ancestry</h3>
+	    <p>Cadet Bank has recently on the orders of the high council gone to the Klingoff home world to interview the very famous Commander Wilf about his troubling family life. Until now Wilf has been a warrior of honour, that to rival the mightiness of the
+			house of DumarC in all their glory. His father's sins in his past life betraying the Klingoff home world is of no secret and Cadet Bank was eager to see how Wilf was doing on his sabbatical away from the Council with his son Antonin.</p>
+	  </div>
+	  <div class="column" >
+	    <h3>Captain Pickle and his commendation</h3>
+	    <p>From ensign to captain in less than six years, captain Pickle has yet to astonish the cosmos yet with his remarkable edge for drinking tea all the time and pulling his shirt down. Will he ever regain his true french accent?
+			The council have decided to award Captain Pickle with a commendation for having a nice bald head that is kept nice and shiny and polished. It has become a true wonder on the Academy campus to see a glancing glow in the distance
+		and there is a comfort to be had in knowing that Captain Pickle will always habe your back.</p>
+	  </div>
+	  <div class="column">
+	    <h3>Lieutenant Byte finds a new brother</h3>
+	    <p>Robots can dream, eat, produce electricity and also take in electricity. So do robots really dream of electric dreams? Lieutenant Byte answers this for us as his memory circuits have shorted and have revealed a hidden subroutine
+			. Could this mean that his unknown creator has left a trail to find him? Byte has already discovered he has an identical brother, a fellow named Nibble who prefers to reside in a hole like a hamster, eating only with 4 bits of food at a time.</p>
+	  </div>
+	</div>
+
+
+		<h2 id="about">About</h2>
+		<p>Nothing to say really, this website has been created to satisfy a university of york interactive media second year assignment.The creator assures you that their intention for making this game is to purely demonstrate their skills in HTML5, CSS, JavaScript. You will find that the energy of this site is entirely chaotic and you can be rest assured that this is done on purpose. Confusion is expected and encouraged.
+		Nothing more nothing less</p>
+
+		<p>However, caution is advised if you are to enter the V O I D. There's roadsigns to get there. Not saying you should go there though. Bad things tend to happen there. Beverley went in once and swore she could see into the future.</p>
+
+		<h2>Here's a lovely space rock</h2>
+		<img src="comet.gif" height="250" width="500" id="cometImage">
+	</main>
+</body>
+ <footer>
+    <p>Y3840030, WADD assignment 2, University of York, 2019 </p>
+
+  </footer>
+
+<script>
+	var click = document.getElementById("about");
+
+	click.addEventListener("click", onClick);
+
+	function onClick(){
+
+		document.querySelector('#somewhere').scrollIntoView({
+		behavior: 'smooth'
+		});
+
+		console.log("I got here");
+	}
+</script>
+</html>
